@@ -26,7 +26,7 @@ int main() {
     int height;
 
     // Input
-    std::cout << "Enter the height length of a triangle (cm): ";
+    std::cout << "Enter the height of a triangle (cm): ";
     std::cin >> height_from_user;
     std::cout << "Enter the base of a triangle (cm): ";
     std::cin >> base_from_user;
@@ -37,7 +37,7 @@ int main() {
         height = std::stoi(height_from_user);
         CalculationOfArea(base, height);
     } catch (std::invalid_argument) {
-        std::cout << "Invalid Input." << std::endl;
+        std::cout << "\nInvalid Input." << std::endl;
     }
     std::cout << "\nDone." << std::endl;
 }
